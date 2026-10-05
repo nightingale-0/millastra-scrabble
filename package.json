@@ -1,0 +1,16 @@
+{
+  "name": "wonderland-scrabble",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A Scrabble-like word game for Genshin Impact: Miliastra Wonderland (原神·千星奇域). Runtime-agnostic rules core + output adapters.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node tools/port-check.mjs && node --test test/*.test.mjs",
+    "dict": "node tools/build-dict.mjs",
+    "board": "node tools/gen-board-html.mjs",
+    "demo": "node tools/demo-game.mjs",
+    "portcheck": "node tools/port-check.mjs",
+    "all": "npm run dict && npm run board && npm test && npm run demo"
+  }
+}

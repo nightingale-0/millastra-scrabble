@@ -1,0 +1,15 @@
+node_modules/
+dist/
+out/
+*.log
+.DS_Store
+.env
+# 大词表不入库（体积/版权），只保留样例与生成脚本
+data/words/*.txt
+!data/words/*.sample.txt
+# 游戏存档备份：绝不入库
+*.gil
+*.gia
+*.gip
+*.gir
+backup/
